@@ -203,7 +203,7 @@ For example, consider the following two pipelines:
 
 * High computation video processing pipeline:
 
-Decode input video, overlay tiem and clock, then encode in theora in ogg container:
+Decode input video, overlay time and clock, then encode in theora in ogg container:
 ```
 decodebin ! videorate ! video/x-raw,framerate=1/1 ! timeoverlay halignment=right valignment=top ! clockoverlay halignment=left valignment=top ! theoraenc bitrate=256 ! oggmux
 ```
